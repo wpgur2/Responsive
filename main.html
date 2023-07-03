@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery/js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="css/master.css">
+    <title>Global Air</title>
+</head>
+<body>
+    <div id="header">
+        <!--데스크탑  태블릿-->
+        <div class="header_inner">
+            <div class="header_bar">
+                <select id="person" name="person">
+                    <option value="personal" class="personal" >개인</option>
+                    <option value="company" class="company" >기업</option>
+                    <option value="travel" class="travel" >여행사</option>
+                </select>
+
+                <ul class="gnb">
+                    <li><a href="#"><img src="images/header/user2.png" class="login" width="28" height="28" alt="로그인" title="로그인"></a></li>
+                    <li><a href="#"><img src="images/header/join.png" class="join" width="28" height="28" alt="로그인" title="회원가입"></a></li>
+                </ul>
+                <!--gnb end-->
+                <select id="lang" name="lang">
+                    <option value="ko">한국어</option>
+                    <option value="eng">ENGLISH</option>
+                    <option value="th">Tiếng Việt</option>
+                    <option value="jp">日本語</option>
+                </select>  
+            </div>
+            <!-- header_bar end -->
+        </div>
+        <!--header_inner end -->
+
+        <!--모바일 -->
+        <div class="m_header_inner">
+            <a href="main.html"><img src="images/mobile_header/logo2.png" alt="메인로고" title="Global_Air" width="60" height="60" ></a>
+            <div class="m_icon">
+                <img src="images/mobile_header/all.png" class="mobile-menu" alt="전체메뉴보기" width="30" height="30">
+            </div>
+        </div>
+        <!-- m_header_inner end -->
+        <div class="m_menu menuwrap">
+            <img src="images/mobile_header/x.png" class="xbtn" alt="x버튼">
+            <div id="menu">
+                <ul class="category_list tab-menu2">
+                    <li><a class="link_sub_item active" href="#tabs-9">예약</a></li>
+                    <li><a class="link_sub_item" href="#tabs-10">서비스</a></li>
+                    <li><a class="link_sub_item" href="#tabs-11">면세점</a></li>
+                    <li><a class="link_sub_item" href="#tabs-12">이벤트</a></li>
+                </ul>
+                <label for="m_search" class="skip"></label>
+                <input type="search" id="m_search" name="m_search">
+            </div>
+            <div class="tab_contents2">
+                <div id="tabs-9" class="m1 active">
+                    <ul>
+                        <li class="list_title"><a href="#">구매안내</a></li>
+                        <li><a href="#">국내선</a></li>
+                        <li><a href="#">국제선</a></li>
+                        <li><a href="#">단체예약</a></li>
+                        <li><a href="#">최저가항공</a></li>
+                    </ul>
+                    <ul>
+                        <li class="list_title"><a href="#">변경,환불</a></li>
+                        <li><a href="#">항공권 환불</a></li>
+                        <li><a href="#">항공권 변경</a></li>
+                    </ul>
+                    <ul>
+                        <li class="list_title"><a href="#">교통편</a></li>
+                        <li><a href="#">기사 서비스 예약</a></li>
+                        <li><a href="#">셔틀버스 예약</a></li>
+                    </ul>
+                </div>
+                <div id="tabs-10" class="m1">
+                    <ul>
+                        <li class="list_title"><a href="sub2.html">여행가이드</a></li>
+                    </ul>
+                    <ul>
+                        <li class="list_title"><a href="#">수하물</a></li>
+                        <li><a href="#">수하물 안내</a></li>
+                        <li><a href="#">운송 제한 물품</a></li>
+                        <li><a href="#">파손 및 유실물</a></li>
+                    </ul>
+                    <ul>
+                        <li class="list_title"><a href="#">도움 필요</a></li>
+                        <li><a href="#">유아동반 승객</a></li>
+                        <li><a href="#">동물 동반 승객</a></li>
+                        <li><a href="#">임신 중인 승객</a></li>
+                        <li><a href="#">몸이 아픈 승객</a></li>
+                    </ul>
+                    <ul>
+                        <li class="list_title"><a href="#">탑승절차</a></li>
+                        <li><a href="#">탑승 절차 안내</a></li>
+                        <li><a href="#">출입국 규정</a></li>
+                    </ul>
+                </div>
+                <div id="tabs-11" class="m1">
+                    <ul>
+                        <li class="list_title"><a href="#">카테고리</a></li>
+                        <li><a href="sub1.html">주류</a></li>
+                        <li><a href="sub1.html">화장품&향수</a></li>
+                        <li><a href="sub1.html">선물용품</a></li>
+                        <li><a href="sub1.html">건강제품류</a></li>
+                    </ul>
+                    <ul>
+                        <li class="list_title"><a href="#">나의 주문</a></li>
+                        <li><a href="#">주문조회</a></li>
+                    </ul>
+                    <ul>
+                        <li class="list_title"><a href="#">이용안내</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div id="tabs-12" class="m1">
+                    <ul>
+                        <li class="list_title"><a href="#">이벤트/프로모션</a></li>
+                    </ul>
+                    <ul>
+                        <li class="list_title"><a href="#">쿠폰</a></li>
+                        <li><a href="#">쿠폰 안내</a></li>
+                        <li><a href="#">쿠폰 북</a></li>
+                    </ul>
+                    <ul>
+                        <li class="list_title"><a href="#">마일리지</a></li>
+                        <li><a href="#">마일리지 적립</a></li>
+                        <li><a href="#">마일리지 사용</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--m_menu end-->
+        <script src="js/btn.js"></script>
+        <script src="js/m_menu.js"></script>
+
+        <nav class="menu_nav">
+            <h1><img src="images/header/mainHeader1.png" alt="메인로고" title="Global_Air"></h1>
+            <ul class="lnb">
+                <!--<li><a href=#><img src="images/header/mainHeader1.png"></a></li>-->
+                <li>
+                    <a href="#" class="lnb1" title="예약">예약</a>
+                    <div class="reserv reserv1">
+                        <ul>
+                            <li class="list_title"><a href="#" title="구매안내">구매안내</a></li>
+                            <li><a href="#" title="국내선">국내선</a></li>
+                            <li><a href="#" title="국제선">국제선</a></li>
+                            <li><a href="#" title="단체예약">단체예약</a></li>
+                            <li><a href="#" title="최저가 항공">최저가항공</a></li>
+                        </ul>
+                        <ul>
+                            <li class="list_title"><a href="#"title="변경,환불">변경,환불</a></li>
+                            <li><a href="#" title="항공권 환불">항공권 환불</a></li>
+                            <li><a href="#" title="항공권 변경">항공권 변경</a></li>
+                        </ul>
+                        <ul>
+                            <li class="list_title"><a href="#" title="교통편">교통편</a></li>
+                            <li><a href="#" title="기사 서비스 예약">기사 서비스 예약</a></li>
+                            <li><a href="#" title="셔틀버스 예약">셔틀버스 예약</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="lnb2" title="서비스">서비스</a>
+                    <div class="reserv reserv2">
+                        <ul>
+                            <li class="list_title"><a href="#" title="수하물">수하물</a></li>
+                            <li><a href="#" title="수하물 안내">수하물 안내</a></li>
+                            <li><a href="#" title="운송 제한 물품">운송 제한 물품</a></li>
+                            <li><a href="#" title="파손 및 유실물">파손 및 유실물</a></li>
+                        </ul>
+                        <ul>
+                            <li class="list_title"><a href="#" title="도움 필요">도움 필요</a></li>
+                            <li><a href="#" title="유아동반 승객">유아동반 승객</a></li>
+                            <li><a href="#" title="동물 동반 승객">동물 동반 승객</a></li>
+                            <li><a href="#" title="임신 중인 승객">임신 중인 승객</a></li>
+                            <li><a href="#" title="몸이 아픈 승객">몸이 아픈 승객</a></li>
+                        </ul>
+                        <ul>
+                            <li class="list_title"><a href="#" title="탑승절차">탑승절차</a></li>
+                            <li><a href="#" title="탑승 절차 안내">탑승 절차 안내</a></li>
+                            <li><a href="#" title="출입국 규정">출입국 규정</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="lnb3" title="면세점">면세점</a>
+                    <div class="reserv reserv3">
+                        <ul>
+                            <li class="list_title"><a href="#" title="카테고리">카테고리</a></li>
+                            <li><a href="sub1.html" title="주류">주류</a></li>
+                            <li><a href="sub1.html" title="화장품&향수">화장품&향수</a></li>
+                            <li><a href="sub1.html" title="선물용품">선물용품</a></li>
+                            <li><a href="sub1.html" title="건강제품류">건강제품류</a></li>
+                        </ul>
+                        <ul>
+                            <li class="list_title"><a href="#" title="나의 주문">나의 주문</a></li>
+                            <li><a href="#" title="주문조회">주문조회</a></li>
+                        </ul>
+                        <ul>
+                            <li class="list_title"><a href="#" title="이용안내">이용안내</a></li>
+                            <li><a href="#" title="FAQ">FAQ</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="lnb4" title="이벤트">이벤트</a>
+                    <div class="reserv reserv4">
+                        <ul>
+                            <li class="list_title"><a href="#" title="이벤트/프로모션">이벤트/프로모션</a></li>
+                        </ul>
+                        <ul>
+                            <li class="list_title"><a href="#" title="쿠폰">쿠폰</a></li>
+                            <li><a href="#" title="쿠폰 안내">쿠폰 안내</a></li>
+                            <li><a href="#" title="쿠폰 북">쿠폰 북</a></li>
+                        </ul>
+                        <ul>
+                            <li class="list_title"><a href="#" title="마일리지">마일리지</a></li>
+                            <li><a href="#" title="마일리지 적립">마일리지 적립</a></li>
+                            <li><a href="#" title="마일리지 사용">마일리지 사용</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <label for="search" class="skip"></label>
+            <input type="search" id="search" name="search">
+            <script>
+                $(function(){
+                    var m=$('.lnb>li>a');
+                    var div=$('.lnb>li>div'); 
+
+                    m.each(function(){
+                        $(this).click(function(){
+                            $(this).next().slideToggle(400).parent().siblings().find('div:visible').slideUp(400);
+                        });
+                    });
+                });
+            </script>
+            <!-- lnb end-->
+        </nav>
+        <!-- nav end -->
+    </div>
+
+    <div id="main">
+        <div class="tab_list tab-menu">
+            <ul>
+                <li class="btn"><a href="#tabs-1" class="active" title="항공권예매">항공권예매</a></li>
+                <li class="btn"><a href="#tabs-2" title="예약조회">예약조회</a></li>
+                <li class="btn"><a href="#tabs-3" title="체크인">체크인</a></li>
+                <li class="btn"><a href="#tabs-4" title="항공권현황">항공권현황</a></li>
+            </ul>
+        </div>
+        <!-- tab_list end-->
+        <div class="tab_contents">
+            <div id="tabs-1" class="tab_contentsInner active">
+                <div class="fisrtLine">    
+                    <div class="lotate">
+                        <span>SEL</span>
+                        <span class="gray textTo">TO</span>
+                    </div>    
+                    <div class="select">
+                        <span class="gray" title="탑승일">탑승일</span>
+                        <span class="gray" title="탑승객">탑승객</span>
+                        <span class="gray" title="좌석등급">좌석등급</span>
+                    </div>
+                </div>
+                <div class="secondLine">
+                    <img src="images/main/rotate.png" alt="회전이미지">
+                </div>
+                <div class="thirdLine">
+                    <div class="lotate_k">
+                        <span>서울</span>
+                        <span class="gray">도착지</span>
+                    </div>
+                    <div class="inputselect">
+                        <label for="date" class="skip" >탑승일</label>
+                        <input type="date" id="date" name="date">
+
+                        <label for="people" class="skip">탑승객</label>
+                        <input type="text" id="people" name="people" placeholder="성인1명">
+
+                        <label for="sit" class="skip">좌석등급</label>
+                        <input type="text" id="sit" name="site" placeholder="선택하세요">
+                    </div> 
+                </div>
+                <div>
+                    <span class="btn" title="검색">검색</span>
+                </div>
+            </div>
+            <div id="tabs-2">
+                <div class="firstLine1">
+                    <div class="select1">
+                        <span class="gray" title="예약번호 또는 항공권 번호">예약번호 또는 항공권 번호</span>
+                        <span class="gray" title="탑승일">탑승일</span>
+                        <span class="gray" title="승객이름">승객이름</span>
+                    </div>
+                </div>
+                <div class="secondLine2">
+                    <div class="inputselect2">
+                        <label for="number" class="skip">탑승객</label>
+                        <input type="text" id="number" name="number" placeholder="예)A1B2C3또는 180-항공권번호">
+
+                        <label for="date2" class="skip">탑승일</label>
+                        <input type="date" id="date2" name="date">
+
+                        <label for="userName" class="skip">승객이름</label>
+                        <input type="text" id="userName" name="userName" placeholder="승객이름">
+                    </div> 
+                </div>
+                <div class="btn">
+                    <span title="조회">조회</span>
+                </div>
+            </div>
+            <div id="tabs-3">
+                <div class="firstLine1">
+                    <div class="select1">
+                        <span class="gray" title="예약또는 항공권 번호">예약번호 또는 항공권 번호</span>
+                        <span class="gray" title="출발일">출발일</span>
+                        <span class="gray" title="승객이름">승객이름</span>
+                    </div>
+                </div>
+                <div class="secondLine2">
+                    <div class="inputselect2">
+                        <label for="number2" class="skip">탑승객</label>
+                        <input type="text" id="number2" name="number" placeholder="예)123ABC또는 123456789">
+
+                        <label for="date3" class="skip">출발일</label>
+                        <input type="date" id="date3" name="date">
+
+                        <label for="userName2" class="skip">승객이름</label>
+                        <input type="text" id="userName2" name="userName" placeholder="승객이름">
+                    </div> 
+                </div>
+                <div class="btn">
+                    <span title="조회">조회</span>
+                </div>
+            </div>
+            <div id="tabs-4">
+                <div class="fisrtLine">    
+                    <div class="lotate">
+                        <span>From</span>
+                        <span class="gray">TO</span>
+                    </div>    
+                    <div class="select">
+                        <span class="gray" title="탑승일">탑승일</span>
+                        <span class="gray" title="탑승객">탑승객</span>
+                        <span class="gray" title="좌석등급">좌석등급</span>
+                    </div>
+                </div>
+                <div class="secondLine">
+                    <img src="images/main/rotate.png" alt="회전이미지">
+                </div>
+                <div class="thirdLine">
+                    <div class="lotate_k">
+                        <span>서울</span>
+                        <span class="gray">도착지</span>
+                    </div>
+                    <div class="inputselect">
+                        <label for="date4" class="skip">탑승일</label>
+                        <input type="date" id="date4" name="date4">
+
+                        <label for="people2" class="skip">탑승객</label>
+                        <input type="text" id="people2" name="people" placeholder="성인1명">
+
+                        <label for="sit2" class="skip">좌석등급</label>
+                        <input type="text" id="sit2" name="site" placeholder="선택하세요">
+                    </div>  
+                </div>
+                <div class="btn">
+                    <span title="조회">조회</span>
+                </div>
+            </div>
+        </div>
+        <!-- tab_contents end-->
+        <script src="js/main_tab.js"></script>
+    </div>
+    <!-- main end-->
+    <div id="contents">
+        <section class="reservation">
+            <h2>운전 서비스 예약하기</h2>
+            <p>퍼스트 또는 비즈니스 클래스로 예약하시면 어디에서나 출발 및 도착 환승을 위한 운전기사 서비스를 편리하게 이용 하실 수 있습니다.</p>
+            <p>운전 기사를 예약하려면 아래에 예약번호와 이름만 입력하시면 됩니다.</p>
+
+            <div class="inputBox inputBoxTop">
+                <label for="u_name" class="skip">이름</label>
+                <input type="text" id="u_name" name="u_name" placeholder="이름">
+            </div>
+            <div class="inputBox">
+                <label for="num" class="skip">예약번호</label>
+                <input type="text" id="num" name="num" placeholder="예약번호">
+            </div>
+            <div class="btn">
+                <span title="예약하기">예약하기</span>
+            </div>
+        </section>
+        <!--reservation end-->
+
+        <section class="rowprice">
+            <h2>최저가 여행</h2>
+            <div class="slide_wrapper">
+                <ul class="slides">
+                    <li class="box first">
+                        <a><img src="images/tourist/busan.jpg" alt="부산" title="부산"></a>
+                        <i class="bul">편도운임</i>
+                        <div class="good_lacation">
+                            <span class="start">서울</span>
+                            <span class="location"></span>
+                            <span class="end">부산</span>
+                        </div>
+            
+                        <div class="good_price">
+                            <span class="unit">KRW</span>
+                            <span class="price">13,900~</span>
+                        </div>
+                    </li>
+
+                    <li class="box">
+                        <a><img src="images/tourist/fukuoka.jpg" alt="후쿠오카" title="후쿠오카"></a>
+                        <i class="bul">편도운임</i>
+                        <div class="good_lacation">
+                            <span class="start">서울</span>
+                            <span class="location"></span>
+                            <span class="end">후쿠오카</span>
+                        </div>
+            
+                        <div class="good_price">
+                            <span class="unit">KRW</span>
+                            <span class="price">20,000~</span>
+                        </div>
+                    </li>
+
+                    <li class="box">
+                        <a><img src="images/tourist/jeju.jpg" alt="제주도" title="제주도"></a>
+                        <i class="bul">편도운임</i>
+                        <div class="good_lacation">
+                            <span class="start">서울</span>
+                            <span class="location"></span>
+                            <span class="end">제주</span>
+                        </div>
+            
+                        <div class="good_price">
+                            <span class="unit">KRW</span>
+                            <span class="price">10,500~</span>
+                        </div>
+                    </li>
+                    <li class="box">
+                        <a><img src="images/tourist/울란바타르.jpg" alt="울란바타르" title="울란바타르"></a>
+                        <i class="bul">편도운임</i>
+                        <div class="good_lacation">
+                            <span class="start">인천</span>
+                            <span class="location"></span>
+                            <span class="end">울란바타르</span>
+                        </div>
+            
+                        <div class="good_price">
+                            <span class="unit">KRW</span>
+                            <span class="price">280,000~</span>
+                        </div>
+                    </li>
+                    <li class="box">
+                        <a><img src="images/tourist/방콕.jpg" alt="방콕" title="방콕"></a>
+                        <i class="bul">편도운임</i>
+                        <div class="good_lacation">
+                            <span class="start">인천</span>
+                            <span class="location"></span>
+                            <span class="end">방콕</span>
+                        </div>
+            
+                        <div class="good_price">
+                            <span class="unit">KRW</span>
+                            <span class="price">65,000~</span>
+                        </div>
+                    </li>
+                    <li class="box">
+                        <a><img src="images/tourist/부산.png" alt="부산" title="부산"></a>
+                        <i class="bul">편도운임</i>
+                        <div class="good_lacation">
+                            <span class="start">김포</span>
+                            <span class="location"></span>
+                            <span class="end">부산/김해</span>
+                        </div>
+            
+                        <div class="good_price">
+                            <span class="unit">KRW</span>
+                            <span class="price">11,900~</span>
+                        </div>
+                    </li>
+                    <li class="box">
+                        <a><img src="images/tourist/narita.jpg" alt="나리타" title="나리타"></a>
+                        <i class="bul">편도운임</i>
+                        <div class="good_lacation">
+                            <span class="start">서울</span>
+                            <span class="location"></span>
+                            <span class="end">나리타</span>
+                        </div>
+            
+                        <div class="good_price">
+                            <span class="unit">KRW</span>
+                            <span class="price">60,000~</span>
+                        </div>
+                    </li>
+                    <li class="box">
+                        <a><img src="images/tourist/singapore.jpg" alt="싱가포르" title="싱가포르"></a>
+                        <i class="bul">편도운임</i>
+                        <div class="good_lacation">
+                            <span class="start">서울</span>
+                            <span class="location"></span>
+                            <span class="end">싱가포르</span>
+                        </div>
+            
+                        <div class="good_price">
+                            <span class="unit">KRW</span>
+                            <span class="price">100,000~</span>
+                        </div>
+                    </li>
+                    <li class="box">
+                        <a><img src="images/tourist/jeju.jpg" alt="제주도" title="제주도"></a>
+                        <i class="bul">편도운임</i>
+                        <div class="good_lacation">
+                            <span class="start">김포</span>
+                            <span class="location"></span>
+                            <span class="end">제주</span>
+                        </div>
+            
+                        <div class="good_price">
+                            <span class="unit">KRW</span>
+                            <span class="price">6,400~</span>
+                        </div>
+                    </li>
+                    <li class="box">
+                        <a><img src="images/tourist/jeju.jpg" alt="제주도" title="제주도"></a>
+                        <i class="bul">편도운임</i>
+                        <div class="good_lacation">
+                            <span class="start">대구</span>
+                            <span class="location"></span>
+                            <span class="end">제주</span>
+                        </div>
+            
+                        <div class="good_price">
+                            <span class="unit">KRW</span>
+                            <span class="price">4,900~</span>
+                        </div>
+                    </li>
+                    <li class="box">
+                        <a><img src="images/tourist/sydney.jpg" alt="시드니" title="시드니"></a>
+                        <i class="bul">편도운임</i>
+                        <div class="good_lacation">
+                            <span class="start">서울</span>
+                            <span class="location"></span>
+                            <span class="end">시드니</span>
+                        </div>
+            
+                        <div class="good_price">
+                            <span class="unit">KRW</span>
+                            <span class="price">280,000~</span>
+                        </div>
+                    </li>
+                    <li class="box ">
+                        <a><img src="images/tourist/danang.jpg" alt="다낭" title="다낭"></a>
+                        <i class="bul">편도운임</i>
+                        <div class="good_lacation">
+                            <span class="start">서울</span>
+                            <span class="location"></span>
+                            <span class="end">다낭</span>
+                        </div>
+            
+                        <div class="good_price">
+                            <span class="unit">KRW</span>
+                            <span class="price">60,000~</span>
+                        </div>
+                    </li>
+                    <li class="box last">
+                        <a><img src="images/tourist/괌.jpg" alt="괌" title="괌"></a>
+                        <i class="bul">편도운임</i>
+                        <div class="good_lacation">
+                            <span class="start">서울</span>
+                            <span class="location"></span>
+                            <span class="end">괌</span>
+                        </div>
+            
+                        <div class="good_price">
+                            <span class="unit">KRW</span>
+                            <span class="price">30,000~</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="slide">
+                <span class="prev"><img src="images/tourist/prev.png" alt="이전 버튼" title="이전 버튼"></span>
+                <span class="next"><img src="images/tourist/next.png" alt="다음 버튼" title="다음 버튼"></span>
+            </div>
+            <script src="js/slide.js"></script>
+        </section>
+        <!-- rowprice end-->
+        
+        <section class="m_rowprice">
+            <h2>최저가 여행</h2>
+            <div class="slide_wrapper">
+                <ul class="slides1">
+                    <li class="box first">
+                        <a><img src="images/tourist/busan.jpg" alt="부산" title="부산"></a>
+                        <i class="bul">편도운임</i>
+                        <div class="good_lacation">
+                            <span class="start">서울</span>
+                            <span class="location"></span>
+                            <span class="end">부산</span>
+                        </div>
+            
+                        <div class="good_price">
+                            <span class="unit">KRW</span>
+                            <span class="price">13,900~</span>
+                        </div>
+                    </li>
+
+                    <li class="box">
+                        <a><img src="images/tourist/fukuoka.jpg" alt="후쿠오카" title="후쿠오카"></a>
+                        <i class="bul">편도운임</i>
+                        <div class="good_lacation">
+                            <span class="start">서울</span>
+                            <span class="location"></span>
+                            <span class="end">후쿠오카</span>
+                        </div>
+            
+                        <div class="good_price">
+                            <span class="unit">KRW</span>
+                            <span class="price">20,000~</span>
+                        </div>
+                    </li>
+
+                    <li class="box">
+                        <a><img src="images/tourist/jeju.jpg" alt="제주도" title="제주도"></a>
+                        <i class="bul">편도운임</i>
+                        <div class="good_lacation">
+                            <span class="start">서울</span>
+                            <span class="location"></span>
+                            <span class="end">제주</span>
+                        </div>
+            
+                        <div class="good_price">
+                            <span class="unit">KRW</span>
+                            <span class="price">10,500~</span>
+                        </div>
+                    </li>
+                    <li class="box">
+                        <a><img src="images/tourist/울란바타르.jpg" alt="울란바타르" title="울란바타르"></a>
+                        <i class="bul">편도운임</i>
+                        <div class="good_lacation">
+                            <span class="start">인천</span>
+                            <span class="location"></span>
+                            <span class="end">울란바타르</span>
+                        </div>
+            
+                        <div class="good_price">
+                            <span class="unit">KRW</span>
+                            <span class="price">280,000~</span>
+                        </div>
+                    </li>
+                    <li class="box">
+                        <a><img src="images/tourist/방콕.jpg" alt="방콕" title="방콕"></a>
+                        <i class="bul">편도운임</i>
+                        <div class="good_lacation">
+                            <span class="start">인천</span>
+                            <span class="location"></span>
+                            <span class="end">방콕</span>
+                        </div>
+            
+                        <div class="good_price">
+                            <span class="unit">KRW</span>
+                            <span class="price">65,000~</span>
+                        </div>
+                    </li>
+                    <li class="box">
+                        <a><img src="images/tourist/부산.png" alt="부산" title="부산"></a>
+                        <i class="bul">편도운임</i>
+                        <div class="good_lacation">
+                            <span class="start">김포</span>
+                            <span class="location"></span>
+                            <span class="end">부산/김해</span>
+                        </div>
+            
+                        <div class="good_price">
+                            <span class="unit">KRW</span>
+                            <span class="price">11,900~</span>
+                        </div>
+                    </li>
+                    <li class="box">
+                        <a><img src="images/tourist/narita.jpg" alt="나리타" title="나리타"></a>
+                        <i class="bul">편도운임</i>
+                        <div class="good_lacation">
+                            <span class="start">서울</span>
+                            <span class="location"></span>
+                            <span class="end">나리타</span>
+                        </div>
+            
+                        <div class="good_price">
+                            <span class="unit">KRW</span>
+                            <span class="price">60,000~</span>
+                        </div>
+                    </li>
+                    <li class="box">
+                        <a><img src="images/tourist/singapore.jpg" alt="싱가포르" title="싱가포르"></a>
+                        <i class="bul">편도운임</i>
+                        <div class="good_lacation">
+                            <span class="start">서울</span>
+                            <span class="location"></span>
+                            <span class="end">싱가포르</span>
+                        </div>
+            
+                        <div class="good_price">
+                            <span class="unit">KRW</span>
+                            <span class="price">100,000~</span>
+                        </div>
+                    </li>
+                    <li class="box">
+                        <a><img src="images/tourist/jeju.jpg" alt="제주도" title="제주도"></a>
+                        <i class="bul">편도운임</i>
+                        <div class="good_lacation">
+                            <span class="start">김포</span>
+                            <span class="location"></span>
+                            <span class="end">제주</span>
+                        </div>
+            
+                        <div class="good_price">
+                            <span class="unit">KRW</span>
+                            <span class="price">6,400~</span>
+                        </div>
+                    </li>
+                    <li class="box">
+                        <a><img src="images/tourist/jeju.jpg" alt="제주도" title="제주도"></a>
+                        <i class="bul">편도운임</i>
+                        <div class="good_lacation">
+                            <span class="start">대구</span>
+                            <span class="location"></span>
+                            <span class="end">제주</span>
+                        </div>
+            
+                        <div class="good_price">
+                            <span class="unit">KRW</span>
+                            <span class="price">4,900~</span>
+                        </div>
+                    </li>
+                    <li class="box">
+                        <a><img src="images/tourist/sydney.jpg" alt="시드니" title="시드니"></a>
+                        <i class="bul">편도운임</i>
+                        <div class="good_lacation">
+                            <span class="start">서울</span>
+                            <span class="location"></span>
+                            <span class="end">시드니</span>
+                        </div>
+            
+                        <div class="good_price">
+                            <span class="unit">KRW</span>
+                            <span class="price">280,000~</span>
+                        </div>
+                    </li>
+                    <li class="box ">
+                        <a><img src="images/tourist/danang.jpg" alt="다낭" title="다낭"></a>
+                        <i class="bul">편도운임</i>
+                        <div class="good_lacation">
+                            <span class="start">서울</span>
+                            <span class="location"></span>
+                            <span class="end">다낭</span>
+                        </div>
+            
+                        <div class="good_price">
+                            <span class="unit">KRW</span>
+                            <span class="price">60,000~</span>
+                        </div>
+                    </li>
+                    <li class="box last">
+                        <a><img src="images/tourist/괌.jpg" alt="괌" title="괌"></a>
+                        <i class="bul">편도운임</i>
+                        <div class="good_lacation">
+                            <span class="start">서울</span>
+                            <span class="location"></span>
+                            <span class="end">괌</span>
+                        </div>
+            
+                        <div class="good_price">
+                            <span class="unit">KRW</span>
+                            <span class="price">30,000~</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="slide">
+                <span class="prev1"><img src="images/tourist/prev.png" alt="이전 버튼" title="이전 버튼"></span>
+                <span class="next1"><img src="images/tourist/next.png" alt="다음 버튼" title="다음 버튼"></span>
+            </div>
+            <script src="js/m_slide.js"></script>
+        </section>
+        <!--m_rowprice end-->
+
+        <section class="popular">
+            <h2>연령별 인기 여행</h2>
+            <div class="age_list">
+                <ul class="tab-menu1">
+                    <li><a href="#tabs-5" class="active" title="20대">20대</a></li>
+                    <li><a href="#tabs-6" title="30대">30대</a></li>
+                    <li><a href="#tabs-7" title="40대">40대</a></li>
+                    <li><a href="#tabs-8" title="50~60대">50~60대</a></li>
+                </ul>
+            </div>
+            
+            <div class="twenty tab_contents1">
+                <div id="tabs-5" class="active">
+                    <div class="list">
+                        <h3>일본</h3>
+                        <img src="images/popular/20/japan.jpg" alt="일본" title="일본">
+                        <div class="list_text">
+                            <p class="merit meritTit">일본을 여행하면 좋은점</p>
+                            <p>편리한 교통</p>
+                            <p>안전한 여행</p>
+                            <p>독특한 문화 체험</p>
+                            <p>다양한 관광지</p>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <h3>태국</h3>
+                        <img src="images/popular/20/Thailand.jpg" alt="태국" title="태국">
+                        <div class="list_text">
+                            <p class="merit meritTit">태국을 여행하면 좋은점</p>
+                            <p>저렴한 여행 경비</p>
+                            <p>아름다운 자연 경관</p>
+                            <p>다양한 액티비티</p>
+                            <p>맛있는 음식</p>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <h3>필리핀</h3>
+                        <img src="images/popular/20/Philippines.jpg" alt="필리핀" title="필리핀">
+                        <div class="list_text">
+                            <p class="merit meritTit">필리핀을 여행하면 좋은점</p>
+                            <p>아름다운 해변과 바다</p>
+                            <p>저렴한 여행 경비</p>
+                            <p>다양한 문화와 역사</p>
+                        </div>
+                    </div>
+                    <div class="list last_list">
+                        <h3>프랑스</h3>
+                        <img src="images/popular/20/paris.jpg" alt="프랑스" title="프랑스">
+                        <div class="list_text">
+                            <p class="merit meritTit">프랑스을 여행하면 좋은점</p>
+                            <p>역사와 문화</p>
+                            <p>쇼핑</p>
+                            <p>여행경로 다양성</p>
+                            <p>낭만적인 분위기</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="tabs-6" class="active">
+                    <div class="list">
+                        <h3>로마</h3>
+                        <img src="images/popular/30/roma.jpg" alt="로마" title="로마">
+                        <div class="list_text">
+                            <p class="merit meritTit">로마를 여행하면 좋은점</p>
+                            <p>역사적인 유산</p>
+                            <p>아름다운 공원과 정원</p>
+                            <p>예술과 문화</p>
+                            <p>음식과 와인</p>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <h3>스페인</h3>
+                        <img src="images/popular/30/spain.jpg" alt="스페인" title="스페인">
+                        <div class="list_text">
+                            <p class="merit meritTit">스페인을 여행하면 좋은점</p>
+                            <p>해변과 휴향지</p>
+                            <p>축제와 행사</p>
+                            <p>독특한 도시와 거리</p>
+                            <p>좋은 날씨</p>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <h3>시드니</h3>
+                        <img src="images/popular/30/sydney.png" alt="시드니" title="시드니">
+                        <div class="list_text">
+                            <p class="merit meritTit">시드니를 여행하면 좋은점</p>
+                            <p>공원과 자연</p>
+                            <p>다양한 활동과 이벤트</p>
+                            <p>아이콘적인 명소</p>
+                            <p>아름다운 해변과 해안</p>
+                        </div>
+                    </div>
+                    <div class="list last_list">
+                        <h3>밴쿠버</h3>
+                        <img src="images/popular/30/vancouver.jpg" alt="밴쿠버" title="벤쿠버">
+                        <div class="list_text">
+                            <p class="merit meritTit">밴쿠버를 여행하면 좋은점</p>
+                            <p>아름다운 자연 경관</p>
+                            <p>문화와 역사</p>
+                            <p>다양한 먹거리</p>
+                            <p>스포츠와 액티비티</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="tabs-7" class="active">
+                    <div class="list">
+                        <h3>이스라엘</h3>
+                        <img src="images/popular/40/Israel.jpg" alt="이스라엘" title="이스라엘">
+                        <div class="list_text">
+                            <p class="merit meritTit">이스라엘을 여행하면 좋은점</p>
+                            <p>종교적인 유산</p>
+                            <p>자연 경관</p>
+                            <p>현대적인 도시</p>
+                            <p>다양한 활동과 이벤트</p>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <h3>뉴질랜드</h3>
+                        <img src="images/popular/40/newzealand.jpg" alt="뉴질랜드" title="뉴질랜드">
+                        <div class="list_text">
+                            <p class="merit meritTit">뉴질랜드를 여행하면 좋은점</p>
+                            <p>놀라운 자연 경관</p>
+                            <p>액티비티와 모험</p>
+                            <p>휴양지와 스파</p>
+                            <p>친절한 사람들</p>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <h3>프로방스</h3>
+                        <img src="images/popular/40/provence.jpg" alt="프로방스" title="프로방스">
+                        <div class="list_text">
+                            <p class="merit meritTit">프로방스를 여행하면 좋은점</p>
+                            <p>매력적인 마을과 도시</p>
+                            <p>음식과 와인</p>
+                            <p>예술과 공예</p>
+                            <p>라벤더와 꽃구경</p>
+                        </div>
+                    </div>
+                    <div class="list last_list">
+                        <h3>영국</h3>
+                        <img src="images/popular/40/uk.jpg" alt="영국" title="영국">
+                        <div class="list_text">
+                            <p class="merit meritTit">영국를 여행하면 좋은점</p>
+                            <p>문화적인 다양성</p>
+                            <p>역사와 유적</p>
+                            <p>다양한 행사와 축제</p>
+                            <p>유럽 여행의 중심지</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="tabs-8" class="active">
+                    <div class="list">
+                        <h3>발리</h3>
+                        <img src="images/popular/50_60/Bali.jpg" alt="발리" title="발리">
+                        <div class="list_text">
+                            <p class="merit meritTit">발리를 여행하면 좋은점</p>
+                            <p>아름다운 자연환경</p>
+                            <p>다양한 여행 활동</p>
+                            <p>맛있는 현지 요리</p>
+                            <p>저렴한 가격</p>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <h3>보라카이</h3>
+                        <img src="images/popular/50_60/boracay.jpg" alt="보라카이" title="보라카이">
+                        <div class="list_text">
+                            <p class="merit meritTit">보라카이를 여행하면 좋은점</p>
+                            <p>워터스포츠 중심지</p>
+                            <p>활기찬 나이트라이프</p>
+                            <p>다양한 숙박시설</p>
+                            <p>즐길 거리와 상점</p>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <h3>그라나다</h3>
+                        <img src="images/popular/50_60/Granada.jpg" alt="그라나다" title="그라나다">
+                        <div class="list_text">
+                            <p class="merit meritTit">그라나다를 여행하면 좋은점</p>
+                            <p>알함브라 궁전과 일반시티</p>
+                            <p>시에라 네바다 국립공원</p>
+                        </div>
+                    </div>
+                    <div class="list last_list">
+                        <h3>뉴욕</h3>
+                        <img src="images/popular/50_60/newyork.jpg" alt="뉴욕" title="뉴욕">
+                        <div class="list_text">
+                            <p class="merit meritTit">뉴욕을 여행하면 좋은점</p>
+                            <p>쇼핑 천국</p>
+                            <p>다양한 음식 문화</p>
+                            <p>다양한 문화와 예술</p>
+                            <p>역사와 문화의 혼합</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="js/main2.tab.js"></script>
+        </section>
+        <!--popular end-->
+
+        <section class="other_service">
+            <div class="other_serviceInner">
+                <h2>제휴서비스</h2>
+                <ul>
+                    <li class="serviceBox">
+                        <h4>호텔</h4>
+                        <img src="images/service/hotel.png" alt="호텔" title="호텔">
+                        <div class="more hotel">
+                            <a href="#"><p>OO호텔</p></a>
+                        </div>
+                    </li>
+                    <li class="serviceBox">
+                        <h4>렌터카</h4>
+                        <img src="images/service/rental-car-.png" alt="렌터카" title="렌터카">
+                        <div class="more car">
+                            <a href="#"><p>롯데렌터카</p></a>
+                        </div>
+                    </li>
+
+                    <li class="serviceBox">
+                        <h4>면세점</h4>
+                        <a href="sub1.html"><img src="images/service/duty.png" alt="면세점" title="면세점"></a>
+                        <div class="more duty">
+                            <a href="#"><p>SKYSHOP</p></a>
+                        </div>
+                    </li>
+
+                    <li class="serviceBox">
+                        <h4>여행가이드</h4>
+                        <a href="sub2.html"><img src="images/service/guide.png" alt="여행가이드" title="여행가이드"></a>
+                        <div class="more duty">
+                            <a href="#"><p>하나투어 | 아고다</p></a>
+                        </div>
+                    </li>
+
+                    <li class="serviceBox">
+                        <h4>여행자 보험</h4>
+                        <img src="images/service/insurance.png" alt="여행자 보험" title="여행자 보험">
+                        <div class="more duty">
+                            <a href="#"><p>CHubb보험</p></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--other_service end-->
+
+        <section class="m_other_service">
+            <div class="m_other_serviceInner">
+                <h2>제휴서비스</h2>
+                <ul>
+                    <li class="serviceBox serviceBox1">
+                        <h4>호텔</h4>
+                        <img src="images/service/hotel.png" alt="호텔" title="호텔">
+                        <div class="more hotel">
+                            <a href="#"><p>00호텔</p></a>
+                        </div>
+                    </li>
+                    <li class="m_toggle m_toggle1">
+                        호텔
+                    </li>
+
+                    <li class="serviceBox serviceBox2">
+                        <h4>렌터카</h4>
+                        <img src="images/service/rental-car-.png" alt="렌터카" title="렌터카">
+                        <div class="more car">
+                            <a href="#"><p>롯데렌터카</p></a>
+                        </div>
+                    </li>
+                    <li class="m_toggle m_toggle2">
+                        롯데렌터카
+                    </li>
+
+                    <li class="serviceBox serviceBox3">
+                        <h4>면세점</h4>
+                        <a href="sub1.html"><img src="images/service/duty.png" alt="면세점" title="면세점"></a>
+                        <div class="more duty">
+                            <a href="#"><p>SKYSHOP</p></a>
+                        </div>
+                    </li>
+                    <li class="m_toggle m_toggle3">
+                        SKYSHOP
+                    </li>
+                    <li class="serviceBox serviceBox4">
+                        <h4>여행가이드</h4>
+                        <a href="sub2.html"><img src="images/service/guide.png" alt="여행가이드" title="여행가이드"></a>
+                        <div class="more duty">
+                            <a href="#"><p>하나투어 | 아고다</p></a>
+                        </div>
+                    </li>
+                    <li class="m_toggle m_toggle4">
+                        하나투어 | 아고다
+                    </li>
+                    <li class="serviceBox serviceBox5">
+                        <h4>여행자 보험</h4> 
+                        <img src="images/service/insurance.png" alt="여행자 보험" title="여행자 보험">
+                        <div class="more duty">
+                            <a href="#"><p>CHubb보험</p></a>
+                        </div>
+                    </li>
+                    <li class="m_toggle m_toggle5">
+                        CHubb보험
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <script>
+            $(function(){
+                $('.serviceBox1').click(function(){
+                    $('.m_toggle1').toggle(300);
+                });
+                $('.serviceBox2').click(function(){
+                    $('.m_toggle2').toggle(300);
+                });
+                $('.serviceBox3').click(function(){
+                    $('.m_toggle3').toggle(300);
+                });
+                $('.serviceBox4').click(function(){
+                    $('.m_toggle4').toggle(300);
+                });
+                $('.serviceBox5').click(function(){
+                    $('.m_toggle5').toggle(300);
+                });
+            });
+        </script>
+        <!--m_other_service end-->
+        <section class="confirm">
+            <h2 class="travelTip">여행 팁</h2>
+            <ul>
+                <li>
+                    <a class="banner_img">
+                        <img src="images/confirm/airplanFood.jpg" alt="기내식" title="기내식">
+                        <p class="hover_text">
+                            글로벌 에어의 새로운 기내식을 만나보세요.
+                        </p>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a class="banner_img">
+                        <img src="images/confirm/insurance.jpg" alt="보험 가입" title="보험가입">
+                        <p class="hover_text">
+                            안전한 여행의 시작, 여행 보험 간편하게
+                            가입하세요.
+                        </p>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a class="banner_img">
+                        <img src="images/confirm/sherpa.jpg" alt="지도확인" title="지도확인">
+                        <p class="hover_text">
+                            여행지별 입국 요건을 지도에서 확인하세요.
+                        </p>
+                    </a>    
+                </li>
+            </ul>
+        </section>
+        <!-- confirm end -->
+        <section class="notice">
+            <h2>알려드립니다</h2>
+            <div class="noticeList">
+                <div class="notice1">
+                    <span class="left">제휴사 시스템 점검 안내 (롯데렌터카, 4/28~5/2)</span>
+                    <span class="right">2023.04.18.</span>
+                </div>
+                <div class="notice1">
+                    <span class="left">한국 출발 국제선 유류할증료 (2023년 5월)</span>
+                    <span class="right">2023.04.18.</span>
+                </div>
+                <div class="notice1">
+                    <span class="left">국제선 당일 변경/취소 수수료 부과 규정 변경</span>
+                    <span class="right">2023.04.18.</span>
+                </div>
+                <div class="notice1">
+                    <span class="left">미국행 탑승객 연락처 입력 권고사항 안내</span>
+                    <span class="right">2023.04.18.</span>
+                </div>
+            </div>
+            <div class="noticeImg slideshow">
+                <img src="images/notice/notice_banner.jpg" alt="코로나 센터" title="코로나 센터">
+                <div class="noticeImgText">
+                    <p class="imgTitle">코로나 19 업데이트 센터</p>
+                    <p>코로나19와 관련된<br> 
+                        최신 정보를 확인하세요</p>
+                </div>
+                <img src="images/notice/notice_banner1.jpg" alt="코로나 백신" title="코로나 백신">
+                <img src="images/notice/notice_banner2.jpg" alt="여행 가이드북" title="여행 가이드북">
+                <img src="images/notice/notice_banner4.jpg" alt="사우디 여행" title="사우디 여행">
+                
+            </div>
+            <script>
+                $(function(){
+                    var slides =$('.slideshow img'),
+                        slideCount=slides.length,
+                        currentIndex=0;
+
+                    slides.eq(0).fadeIn();
+                    var timer=setInterval(showNextSlide,3500);
+
+                    function showNextSlide(){
+                        var nextIndex= (currentIndex+1)%slideCount;
+                        slides.eq(currentIndex).fadeOut();
+                        slides.eq(nextIndex).fadeIn();
+                        currentIndex = nextIndex;
+                    }
+                });
+            </script>
+        </section>
+        <!-- notice end -->
+    </div>
+    <div id="footer">
+        <div class="footer_inner">
+            <h3><img src="images/header/mainHeader1.png" alt="footer 로고" title="footer logo"></h3>
+            <div class="footer_word">
+                <div class="line">
+                    <span class="owner">대표 : 김대표</span>
+                    <span>주소 : 서울특별시 구로구 공원로 83 4층</span>  
+                    <span>전화 : 010-1234-1234</span> 
+                    <div class="footerImg">
+                        <a href="#"><img src="images/footer/facebook.png" alt="facebook" title="facebook"></a>
+                        <a href="#"><img src="images/footer/instagram.png" alt="instagram" title="instagram"></a>
+                        <a href="#"><img src="images/footer/twitter.jpg" alt="twitter" title="twitter"></a>
+                        <a href="#"><img src="images/footer/youtube.png" alt="youtube" title="youtube"></a>
+                    </div>
+                </div>
+                <div class="line">
+                    <span>
+                        사업자등록번호 : 123-45-67890
+                    </span>
+                    <span>
+                        통신판매업신고 : 2023 서울동작 0123
+                    </span>
+                </div>
+                <div class="line">
+                    <span>   
+                        Copyright ⓒ2023 XX All rights reserved.
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div id="footerLine"></div>
+        <div class="m_footer_inner">
+            <p class="Global_Air">(주) Global Air</p>
+            <p class="m_owner">대표 : 김대표</p>
+            <div>
+                <p>주소 : 서울특별시 구로구 공원로 83 4층</p>       
+                <p>전화 : 010-1234-1234</p>      
+                <p>사업자등록번호 : 123-45-67890</p>      
+                <p> 통신판매업신고 : 2023 서울동작 0123</p>      
+                <p>Copyright ⓒ2023 XX All rights reserved.</p>          
+            </div>       
+            <div class="m_footer_icon">
+                <a href="#"><img src="images/footer/facebook.png" alt="facebook" title="facebook"></a>
+                <a href="#"><img src="images/footer/instagram.png" alt="instagram" title="instagram"></a>
+                <a href="#"><img src="images/footer/twitter.jpg" alt="twitter" title="twitter"></a>
+                <a href="#"><img src="images/footer/youtube.png" alt="youtube" title="youtube"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
