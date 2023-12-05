@@ -4,4 +4,4 @@
 
 대한항공,티웨이항공을 참고하여 만들었습니다
 
-http://globalair.dothome.co.kr/main.html
+http://globalair1.dothome.co.kr/main.html
